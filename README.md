@@ -10,7 +10,7 @@ $wikiquote = new wikiquote();
 
 $quotes = $wikiquote->get_author_quotes('Richard Stallman');
 
-for($i = 0; $i < count($quotes); $i ++)
+for($i = 0; $i < count($quotes); $i++)
 {
     print($quotes[$i] . "\n\n");
 }
@@ -34,7 +34,7 @@ $wikiquote = new wikiquote();
 $pages = $wikiquote->get_pages();
 $c_names = $wikiquote->get_authors($pages[2]); // List_of_people_by_name,_C
 
-for($i = 0; $i < count($c_names); $i ++)
+for($i = 0; $i < count($c_names); $i++)
 {
     print($c_names[$i] . "\n\n");
 }
