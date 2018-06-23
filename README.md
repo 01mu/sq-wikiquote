@@ -1,5 +1,5 @@
 # sq-wikiquote
-Get authors and quotes from wikiquote.org. Since Wikiquote pages are not formatted consistently some quotes are not included. There are over 100,000 quotes from over 7,000 authors.
+Get authors and quotes from wikiquote.org. Since user-edited Wikiquote pages are not formatted consistently some quotes are not included. There are over 100,000 quotes from over 7,000 authors.
 ## Usage
 Get quotes from an individual author:
 ```
