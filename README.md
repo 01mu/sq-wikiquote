@@ -2,7 +2,7 @@
 Get authors and quotes from wikiquote.org. Since user-edited Wikiquote pages are not formatted consistently some quotes are not included. There are over 100,000 quotes from over 7,000 authors.
 ## Usage
 Get quotes from an individual author:
-```
+```php
 <?php
 include_once 'sq-wikiquote.php';
 
@@ -25,7 +25,7 @@ Hundreds of thousands of babies are born every day. While the whole phenomenon i
 ...
 ```
 Get names by page "List_of_people_by_name,_C", etc.:
-```
+```php
 <?php
 include_once 'sq-wikiquote.php';
 
