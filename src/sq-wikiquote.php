@@ -1,11 +1,9 @@
 <?php
+
 /*
-    sq-wikiquote.php
-
-    Get authors and quotes from wikiquote.org.
-
-    github.com/01mu
-*/
+ * sq-wikiquote
+ * github.com/01mu
+ */
 
 class wikiquote
 {
@@ -45,7 +43,7 @@ class wikiquote
         return $quotes_array;
     }
 
-    private function get_authors($page)
+    public function get_authors($page)
     {
         $name_str = $this->get_authors_string($page);
         $name_str_len = strlen($name_str);
