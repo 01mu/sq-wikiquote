@@ -1,5 +1,4 @@
 <?php
-
 /*
  * sq-wikiquote
  * github.com/01mu
@@ -66,7 +65,7 @@ class wikiquote
         $this->print_json($json, '');
     }
 
-    public function get_quotes_random($start, $limit)
+    public function get_quote_random($start, $limit)
     {
         $sql = 'SELECT quote, author FROM quotes ' .
             'ORDER BY RAND() LIMIT :start, :limit';
