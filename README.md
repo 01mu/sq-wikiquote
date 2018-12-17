@@ -52,3 +52,32 @@ Nicola Cabibbo
 
 ...
 ```
+### Write all quotes to a MySQL database:
+Creates three tables (`quotes`, `authors`, and `relations`) and makes inserts.
+* `quotes` contains quote length information, the quote's author, and the quote itself.
+* `authors` contains the names of authors and their quote count.
+* `relations` contains quote authors that appear in a given author's Wikipedia page. (ex: Plato and Hannibal appear as links in Alexander the Great's Wikipedia article, so they are included as `relations`.)
+```php
+<?php
+include_once 'sq-wikiquote.php';
+
+$wikiquote = new wikiquote();
+
+$server = '';
+$username = '';
+$pw = '';
+$db = '';
+
+$wikiquote->conn($server, $username, $pw, $db);
+$wikiquote->create_tables();
+$wikiquote->write_db();
+$wikiquote->write_relations();
+```
+```
+Inserting 'Brooks Adams' quotes... Quotes inserted: 3.
+Inserting 'Bryan Adams' quotes... Quotes inserted: 19.
+Inserting 'Charles Francis Adams, Sr.' quotes... Quotes inserted: 3.
+Inserting 'Charles Follen Adams' quotes... Quotes inserted: 1.
+Inserting 'Douglas Adams' quotes... Quotes inserted: 37.
+...
+```
