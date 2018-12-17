@@ -81,3 +81,10 @@ Inserting 'Charles Follen Adams' quotes... Quotes inserted: 1.
 Inserting 'Douglas Adams' quotes... Quotes inserted: 37.
 ...
 ```
+### API
+Return quotes from the MySQL database.
+* get_author_list(`$start`, `$limit`): Return random authors
+* get_author_search(`$author`, `$start`, `$limit`): Return authors matching query
+* get_author_single(`$author`): Return specific author, quotes, and relations
+* get_quote_random(`$start`, `$limit`): Return random quotes
+* get_quote_search(`$quote`, `$start`, `$limit`): Return quotes matching query
