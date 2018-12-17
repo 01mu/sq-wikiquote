@@ -56,7 +56,7 @@ Nicola Cabibbo
 Creates three tables (`quotes`, `authors`, and `relations`) and makes inserts.
 * `quotes` contains quote length information, the quote's author, and the quote itself.
 * `authors` contains the names of authors and their quote count.
-* `relations` contains quote authors that appear in a given author's Wikipedia page. (ex: Plato and Hannibal appear as links in Alexander the Great's Wikipedia article, so they are included as `relations`.)
+* `relations` contains quote authors that appear in a given author's Wikipedia page. (ex: Plato and Hannibal appear as links in Alexander the Great's Wikipedia article, so they are included as `relations` for Alexander the Great.)
 ```php
 <?php
 include_once 'sq-wikiquote.php';
