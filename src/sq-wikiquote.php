@@ -268,7 +268,7 @@ class wikiquote
             $len = strlen($quote);
 
             $stmt= $this->conn->prepare($sql_q);
-            $stmt->execute([$author, $quote, $wc, $len]);
+            $stmt->execute([$author, utf8_encode($quote), $wc, $len]);
 
             $q_wc += $wc;
             $q_len += $len;
